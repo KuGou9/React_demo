@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+# 效果图在public的finalImage文件夹内
+
+# 技术点
+## 1. 采用了React框架搭建项目，样式上在index.html文件中通过bootsCDN引入了bootstrap4.5的link，使整体样式更为美观，同时因为在不同的情况下会有不一样的样式，所以采用了第三方库classnames进行样式的动态生成
+## 2. 结合了React-Router进行路由跳转，采用React-Redux、Redux进行了数据的共享
+## 3. 使用高阶组件对页面访问进行了限制（高阶组件：通过传入一个组件来对这个组件需要满足的情况进行判断之后再进行展示）
+## 4. 使用了LocalStroge进行登录信息的存储，以此来解决页面刷新后redux中的数据丢失的问题
+## 5. 结合express搭建了一个简易服务器来对登录的信息做一个判断，在使用axios请求接口的数据的时候将数据传送保存。由于使用post请求的传参问题，使用了第三方插件body-parser
+## 6. 使用第三方库lodash、validator对服务器后端的数据进行一个判断
+## 7. 在搭建的后端服务器通讯时的跨域问题，采用了第三方插件http-proxy-middleware进行了配置
+
+=======
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +79,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+>>>>>>> 82b6d3d... Initialize project using Create React App

@@ -1,0 +1,19 @@
+{
+  // 设置重启模式 
+  "restartable": "rs",
+  "ignore": [".git", ".svn", "node_modules/**/node_modules"],
+  // 设置日志输出模式，true 详细模式 
+  "verbose": true,
+  // 设置运行服务的后缀名与对应的命令  
+  // 表示使用 nodemon 代替 node 
+  "execMap": {
+    "js": "node --harmony"
+  },
+  // 监听哪些文件的变化，当变化的时候自动重启 
+  "watch": [],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  // 监控指定的后缀文件名
+  "ext": "js json"
+}
